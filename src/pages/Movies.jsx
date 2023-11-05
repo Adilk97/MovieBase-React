@@ -132,13 +132,12 @@ const Movies = () => {
           <div className="row">
             <div className="movies__grid">
               {movies.map((movie) => (
-                <div key={movie.imdbID} className="movies__card">
-                  <img
-                    onClick={() => navigate(`${movie.imdbID}`)}
-                    className="movie__img"
-                    src={movie.Poster}
-                    alt=""
-                  />
+                <div
+                  key={movie.imdbID}
+                  onClick={() => navigate(`${movie.imdbID}`)}
+                  className="movies__card"
+                >
+                  <img className="movie__img" src={movie.Poster} alt="" />
                   <h3 className="movie__title">{movie.Title}</h3>
                   <h3 className="movie__year">{movie.Year}</h3>
                   <h3 className="movie__type">{movie.Type}</h3>

@@ -156,6 +156,7 @@ button:hover::before {
   box-shadow: 1px 1px 10px 1px #10c4bb;
   text-align: center;
   line-height: 1.5;
+  cursor: pointer;
 }
 
 .movie__img {
